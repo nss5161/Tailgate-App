@@ -1,0 +1,12 @@
+<div class="cat-container">
+  <div class="cat-nav-container">
+    <div class="cat-nav">
+      <div class="cat-nav-item" ng-repeat="o in x">
+        <a class="subnav" ui-sref=".{{o.name}}">{{o.name}}</a>
+      </div>
+    </div>
+    <div class="cat-nav-slider"></div>
+  </div>
+</div>
+
+<div ui-view></div>

@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="gameday-container">
+		<div class="opp-container"><img ng-src="{{ detail.icon }}" style="-webkit-filter: drop-shadow(0.5px 0.5px 15px 15px{{ detail.color }}" /></div>
+		<div class="quickinfo-container" style="border: 5px solid {{ detail.color }}">
+			<p class="opp-name">Team<span style="border-left: 10px solid {{ detail.secondColor }};" class="label-data">{{ detail.name }}</span></p>
+			<p class="game-date">Date<span style="border-left: 10px solid {{ detail.secondColor }};" class="label-data">{{ detail.gdate }}</span></p>
+			<p class="game-time">Time<span style="border-left: 10px solid {{ detail.secondColor }};" class="label-data">{{ detail.gtime }}</span></p>
+		</div>
+	</div>
+</div>
+
+<div class="row" style="margin-bottom: 50px;">
+	<item-nav></item-nav>
+</div>
