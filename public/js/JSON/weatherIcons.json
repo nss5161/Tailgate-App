@@ -1,0 +1,87 @@
+{
+  "icons": [{
+      "id": 1,
+      "text": "Isolated Thunderstorms",
+      "img": "../img/weather-icons/storm.svg",
+      "alt": "../img/weather-icons/storm-circle.svg"
+    },
+    {
+      "id": 2,
+      "text": "Sunny",
+      "img": "../img/weather-icons/sunny.svg",
+      "alt": "../img/weather-icons/sunny-circle.svg"
+    },
+    {
+      "id": 3,
+      "text": "Partly Cloudy",
+      "img": "../img/weather-icons/partial.svg",
+      "alt": "../img/weather-icons/storm-circle.svg"
+    },
+    {
+      "id": 4,
+      "text": "Thundershowers",
+      "img": "../img/weather-icons/storm.svg",
+      "alt": "../img/weather-icons/storm-circle.svg"
+    },
+    {
+      "id": 5,
+      "text": "Scattered Thunderstorms",
+      "img": "../img/weather-icons/storm.svg",
+      "alt": "../img/weather-icons/storm-circle.svg"
+    },
+    {
+      "id": 6,
+      "text": "Mostly Sunny",
+      "img": "../img/weather-icons/sunny.svg",
+      "alt": "../img/weather-icons/sunny-circle.svg"
+    },
+    {
+      "id": 7,
+      "text": "Showers",
+      "img": "../img/weather-icons/rain.svg",
+      "alt": "../img/weather-icons/rain-circle.svg"
+    },
+    {
+      "id": 8,
+      "text": "Tornado",
+      "img": "../img/weather-icons/tornado.svg",
+      "alt": "../img/weather-icons/tornado-circle.svg"
+    },
+    {
+      "id": 9,
+      "text": "Snow",
+      "img": "../img/weather-icons/snow.svg",
+      "alt": "../img/weather-icons/snow-circle.svg"
+    },
+    {
+      "id": 10,
+      "text": "Snow Flurries",
+      "img": "../img/weather-icons/snow.svg",
+      "alt": "../img/weather-icons/snow-circle.svg"
+    },
+    {
+      "id": 11,
+      "text": "Heavy Snow",
+      "img": "../img/weather-icons/snow.svg",
+      "alt": "../img/weather-icons/snow-circle.svg"
+    },
+    {
+      "id": 12,
+      "text": "Scattered Showers",
+      "img": "../img/weather-icons/rain.svg",
+      "alt": "../img/weather-icons/rain-circle.svg"
+    },
+    {
+      "id": 13,
+      "text": "Windy",
+      "img": "../img/weather-icons/windy.svg",
+      "alt": "../img/weather-icons/windy-circle.svg"
+    },
+    {
+      "id": 14,
+      "text": "Partly Cloudy",
+      "img": "../img/weather-icons/partial.svg",
+      "alt": "../img/weather-icons/partial-circle.svg"
+    }
+  ]
+}

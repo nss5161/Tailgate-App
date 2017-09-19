@@ -1,0 +1,13 @@
+<div class="head-container">
+  <img src="../img/busstuff.svg" class="busstuff_logo"/>
+  <div class="nav-container">
+    <div class="nav">
+      <div ng-repeat="t in opp" class="nav-item">
+        <img class="cf_icon" ng-src="{{ t.icon }}" />
+        <a ui-sref="game({id: $index})">{{ t.name }}</a>
+        <p class="cf_date">{{ t.gdate | date }}</p>
+      </div>
+    </div>
+    <div class="nav-slider"></div>
+  </div>
+</div>

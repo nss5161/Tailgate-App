@@ -1,0 +1,1005 @@
+{
+  "teams": [
+    {
+      "name": "Akron",
+      "color": "#0D264E",
+      "secondColor": "#978244",
+      "icon": "../../img/akron4.png",
+      "gdate": "9-02-2017",
+      "gtime": "12:00pm",
+      "gameInfo": [
+        {
+          "food": [
+            {
+              "name": "Tim Gleason",
+              "dish": "Potato Salad",
+              "type": "Sides"
+            },
+            {
+              "name": "Sharon Stone",
+              "dish": "Ribs",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Garra Masala",
+              "dish": "Macaroni and Cheese",
+              "type": "Desserts"
+            },
+            {
+              "name": "Winston Churchill",
+              "dish": "Crumpets",
+              "type": "Snacks"
+            },
+            {
+              "name": "Tim Gim",
+              "dish": "Eggs and Bacon",
+              "type": "Breakfast"
+            },
+            {
+              "name": "Larry Good",
+              "dish": "Pancakes",
+              "type": "Breakfast"
+            },
+            {
+              "name": "You Young",
+              "dish": "Margharitas",
+              "type": "ENFI/Other"
+            }
+          ]
+        },
+        {
+          "tickets": {
+            "attending":[
+              {
+                "name": "Nick Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Brian Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Adam Jackson",
+                "phone": "7249537041"
+              },
+              {
+                "name": "Connor Marshall",
+                "phone": "5855191578"
+              },
+              {
+                "name": "Chris Kovalchuk",
+                "phone": "7249845192"
+              },
+              {
+                "name": "Bill Madden",
+                "phone": "7172508432"
+              },
+              {
+                "name": "Ty Quinn",
+                "phone": "2487953532"
+              },
+              {
+                "name": "Josh Looney",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Anthony Zenobi",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Mckenzie Marshall",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dylan Pharell",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dana Williams",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Beth Carey",
+                "phone": "7249635447"
+              }
+            ],
+            "available":[
+              {
+                "name": "Ang Travato",
+                "phone": "7249635447"
+              }
+            ]
+          }
+        },
+        {
+          "theme": [
+            {
+              "name": "Tiny Hats",
+              "desc": "Everyone must wear a tiny hat of some sort.",
+              "supplies":[
+                {"name": "Polka Music"},
+                {"name": "Clown Noses"},
+                {"name": "Hawaiian Shirts"},
+                {"name": "Slippers"},
+                {"name": "Streamers"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pitt",
+      "color": "#B4A469",
+      "secondColor": "#002D62",
+      "icon": "../../img/pitt.png",
+      "gdate": "9-09-2017",
+      "gtime": "3:30pm",
+      "gameInfo": [
+        {
+          "food": [
+            {
+              "name": "Yara Newman",
+              "dish": "Potato Salad",
+              "type": "Sides"
+            },
+            {
+              "name": "Jon Winter",
+              "dish": "Macaroni and Cheese",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Larry Bird",
+              "dish": "Cheesecake",
+              "type": "Desserts"
+            },
+            {
+              "name": "Winston Churchill",
+              "dish": "Crumpets",
+              "type": "Snacks"
+            },
+            {
+              "name": "Helen Lawly",
+              "dish": "Potato Chips",
+              "type": "Snacks"
+            },
+            {
+              "name": "Jim Gem",
+              "dish": "Frog Beer",
+              "type": "ENFI/Other"
+            },
+            {
+              "name": "Cody Worehall",
+              "dish": "Soup",
+              "type": "Sides"
+            },
+            {
+              "name": "Lance Billmetwice",
+              "dish": "Straws and Cups",
+              "type": "ENFI/Other"
+            },
+            {
+              "name": "Carlos Brandywine",
+              "dish": "Bread Casserol",
+              "type": "Main Dishes"
+            }
+          ]
+        },
+        {
+          "tickets": {
+            "attending":[
+              {
+                "name": "Nick Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Brian Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Adam Jackson",
+                "phone": "7249537041"
+              },
+              {
+                "name": "Connor Marshall",
+                "phone": "5855191578"
+              },
+              {
+                "name": "Chris Kovalchuk",
+                "phone": "7249845192"
+              },
+              {
+                "name": "Bill Madden",
+                "phone": "7172508432"
+              },
+              {
+                "name": "Ty Quinn",
+                "phone": "2487953532"
+              },
+              {
+                "name": "Josh Looney",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Anthony Zenobi",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Mckenzie Marshall",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dylan Pharell",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dana Williams",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Beth Carey",
+                "phone": "7249635447"
+              }
+            ],
+            "available":[
+              {
+                "name": "Ang Travato",
+                "phone": "7249635447"
+              }
+            ]
+          }
+        },
+        {
+          "theme": [
+            {
+              "name": "Tiny Hats",
+              "desc": "Everyone must wear a tiny hat of some sort.",
+              "supplies":[
+                {"name": "Polka Music"},
+                {"name": "Clown Noses"},
+                {"name": "Hawaiian Shirts"},
+                {"name": "Slippers"},
+                {"name": "Streamers"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Georgia State",
+      "color": "#17468E",
+      "secondColor": "#E41836",
+      "icon": "../../img/georgia-state.png",
+      "gdate": "9-16-217",
+      "gtime": "7:30pm",
+      "gameInfo": [
+        {
+          "food": [
+            {
+              "name": "Ustice Manwell",
+              "dish": "Pizza Pie",
+              "type": "Sides"
+            },
+            {
+              "name": "Carlos Riviera",
+              "dish": "Oreos",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Marco Sweedo",
+              "dish": "SHLEM!",
+              "type": "Desserts"
+            },
+            {
+              "name": "Winston Churchill",
+              "dish": "Bear Steak",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Willy Yomama",
+              "dish": "Napkins and Cups",
+              "type": "ENFI/Other"
+            },
+            {
+              "name": "Cafeteria Face",
+              "dish": "Pulled Pork",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "June Shoemaker",
+              "dish": "Pretzels",
+              "type": "Snacks"
+            },
+            {
+              "name": "Josh Nottarobot",
+              "dish": "Cable Wires",
+              "type": "Desserts"
+            },
+            {
+              "name": "Kerry Keylinger",
+              "dish": "Heating Trays",
+              "type": "ENFI/Other"
+            },
+            {
+              "name": "Jesse Chip",
+              "dish": "Roast Pie",
+              "type": "Sides"
+            },
+            {
+              "name": "Fredrik Onsfelder",
+              "dish": "Tater Tots",
+              "type": "Sides"
+            }
+          ]
+        },
+        {
+          "tickets": {
+            "attending":[
+              {
+                "name": "Nick Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Brian Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Adam Jackson",
+                "phone": "7249537041"
+              },
+              {
+                "name": "Connor Marshall",
+                "phone": "5855191578"
+              },
+              {
+                "name": "Chris Kovalchuk",
+                "phone": "7249845192"
+              },
+              {
+                "name": "Bill Madden",
+                "phone": "7172508432"
+              },
+              {
+                "name": "Ty Quinn",
+                "phone": "2487953532"
+              },
+              {
+                "name": "Josh Looney",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Anthony Zenobi",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Mckenzie Marshall",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dylan Pharell",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dana Williams",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Beth Carey",
+                "phone": "7249635447"
+              }
+            ],
+            "available":[
+              {
+                "name": "Ang Travato",
+                "phone": "7249635447"
+              }
+            ]
+          }
+        },
+        {
+          "theme": [
+            {
+              "name": "Tiny Hats",
+              "desc": "Everyone must wear a tiny hat of some sort.",
+              "supplies":[
+                {"name": "Polka Music"},
+                {"name": "Clown Noses"},
+                {"name": "Hawaiian Shirts"},
+                {"name": "Slippers"},
+                {"name": "Streamers"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Indiana",
+      "color": "#990000",
+      "secondColor": "#CC5E5D",
+      "icon": "../../img/indiana.png",
+      "gdate": "9-30-2017",
+      "gtime": "TBD",
+      "gameInfo": [
+        {
+          "food": [
+            {
+              "name": "America Bama",
+              "dish": "Pig Hooves",
+              "type": "Sides"
+            },
+            {
+              "name": "Crank Manter",
+              "dish": "Fried Macaroni and Cheese",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Louis Marcel",
+              "dish": "Peanut Butter Cake",
+              "type": "Desserts"
+            },
+            {
+              "name": "Yevnah Smatha",
+              "dish": "Shpoopla",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Tim Gleason",
+              "dish": "Potato Salad",
+              "type": "Sides"
+            },
+            {
+              "name": "Sharon Stone",
+              "dish": "Ribs",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Garra Masala",
+              "dish": "Macaroni and Cheese",
+              "type": "Desserts"
+            },
+            {
+              "name": "Shontel Williams",
+              "dish": "Split Peas",
+              "type": "Snacks"
+            },
+            {
+              "name": "Tim Gim",
+              "dish": "Eggs and Bacon",
+              "type": "Breakfast"
+            },
+            {
+              "name": "Larry Good",
+              "dish": "Pancakes",
+              "type": "Breakfast"
+            },
+            {
+              "name": "You Young",
+              "dish": "Margharitas",
+              "type": "ENFI/Other"
+            }
+          ]
+        },
+        {
+          "tickets": {
+            "attending":[
+              {
+                "name": "Nick Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Brian Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Adam Jackson",
+                "phone": "7249537041"
+              },
+              {
+                "name": "Connor Marshall",
+                "phone": "5855191578"
+              },
+              {
+                "name": "Chris Kovalchuk",
+                "phone": "7249845192"
+              },
+              {
+                "name": "Bill Madden",
+                "phone": "7172508432"
+              },
+              {
+                "name": "Ty Quinn",
+                "phone": "2487953532"
+              },
+              {
+                "name": "Josh Looney",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Anthony Zenobi",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Mckenzie Marshall",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dylan Pharell",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dana Williams",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Beth Carey",
+                "phone": "7249635447"
+              }
+            ],
+            "available":[
+              {
+                "name": "Ang Travato",
+                "phone": "7249635447"
+              }
+            ]
+          }
+        },
+        {
+          "theme": [
+            {
+              "name": "Tiny Hats",
+              "desc": "Everyone must wear a tiny hat of some sort.",
+              "supplies":[
+                {"name": "Polka Music"},
+                {"name": "Clown Noses"},
+                {"name": "Hawaiian Shirts"},
+                {"name": "Slippers"},
+                {"name": "Streamers"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Michigan",
+      "color": "#F7D905",
+      "secondColor": "#151C48",
+      "icon": "../../img/michigan.png",
+      "gdate": "10-21-2017",
+      "gtime": "TBD",
+      "gameInfo": [
+        {
+          "food": [
+            {
+              "name": "Dan Spaghetti",
+              "dish": "Gravy Sliders",
+              "type": "Sides"
+            },
+            {
+              "name": "Rooster Mcgoo",
+              "dish": "Chees Curds",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Navo Spetch",
+              "dish": "Jello",
+              "type": "Desserts"
+            },
+            {
+              "name": "Lester Mayhop",
+              "dish": "Possum",
+              "type": "Snacks"
+            },
+            {
+              "name": "Yara Newman",
+              "dish": "Potato Salad",
+              "type": "Sides"
+            },
+            {
+              "name": "Jon Winter",
+              "dish": "Macaroni and Cheese",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Larry Bird",
+              "dish": "Cheesecake",
+              "type": "Desserts"
+            },
+            {
+              "name": "Winston Churchill",
+              "dish": "Crumpets",
+              "type": "Snacks"
+            },
+            {
+              "name": "Helen Lawly",
+              "dish": "Potato Chips",
+              "type": "Snacks"
+            },
+            {
+              "name": "Jim Gem",
+              "dish": "Frog Beer",
+              "type": "ENFI/Other"
+            },
+            {
+              "name": "Cody Worehall",
+              "dish": "Soup",
+              "type": "Sides"
+            },
+            {
+              "name": "Lance Billmetwice",
+              "dish": "Straws and Cups",
+              "type": "ENFI/Other"
+            },
+            {
+              "name": "Carlos Brandywine",
+              "dish": "Bread Casserol",
+              "type": "Main Dishes"
+            }
+          ]
+        },
+        {
+          "tickets": {
+            "attending":[
+              {
+                "name": "Nick Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Brian Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Adam Jackson",
+                "phone": "7249537041"
+              },
+              {
+                "name": "Connor Marshall",
+                "phone": "5855191578"
+              },
+              {
+                "name": "Chris Kovalchuk",
+                "phone": "7249845192"
+              },
+              {
+                "name": "Bill Madden",
+                "phone": "7172508432"
+              },
+              {
+                "name": "Ty Quinn",
+                "phone": "2487953532"
+              },
+              {
+                "name": "Josh Looney",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Anthony Zenobi",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Mckenzie Marshall",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dylan Pharell",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dana Williams",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Beth Carey",
+                "phone": "7249635447"
+              }
+            ],
+            "available":[
+              {
+                "name": "Ang Travato",
+                "phone": "7249635447"
+              }
+            ]
+          }
+        },
+        {
+          "theme": [
+            {
+              "name": "Tiny Hats",
+              "desc": "Everyone must wear a tiny hat of some sort.",
+              "supplies":[
+                {"name": "Polka Music"},
+                {"name": "Clown Noses"},
+                {"name": "Hawaiian Shirts"},
+                {"name": "Slippers"},
+                {"name": "Streamers"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rutgers",
+      "color": "#D0202E",
+      "secondColor": "#C3C6CB",
+      "icon": "../../img/rutgers.png",
+      "gdate": "11-11-2017",
+      "gtime": "12:00pm",
+      "gameInfo": [
+        {
+          "food": [
+            {
+              "name": "Grey Maynor",
+              "dish": "Potato Salad",
+              "type": "Sides"
+            },
+            {
+              "name": "Alan Jackson",
+              "dish": "Macaroni and Cheese",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Nick Stillwater",
+              "dish": "Macaroni and Cheese",
+              "type": "Desserts"
+            },
+            {
+              "name": "Winston Churchill",
+              "dish": "Crumpets",
+              "type": "Snacks"
+            }
+          ]
+        },
+        {
+          "tickets": {
+            "attending":[
+              {
+                "name": "Nick Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Brian Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Adam Jackson",
+                "phone": "7249537041"
+              },
+              {
+                "name": "Connor Marshall",
+                "phone": "5855191578"
+              },
+              {
+                "name": "Chris Kovalchuk",
+                "phone": "7249845192"
+              },
+              {
+                "name": "Bill Madden",
+                "phone": "7172508432"
+              },
+              {
+                "name": "Ty Quinn",
+                "phone": "2487953532"
+              },
+              {
+                "name": "Josh Looney",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Anthony Zenobi",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Mckenzie Marshall",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dylan Pharell",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dana Williams",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Beth Carey",
+                "phone": "7249635447"
+              }
+            ],
+            "available":[
+              {
+                "name": "Ang Travato",
+                "phone": "7249635447"
+              }
+            ]
+          }
+        },
+        {
+          "theme": [
+            {
+              "name": "Tiny Hats",
+              "desc": "Everyone must wear a tiny hat of some sort.",
+              "supplies":[
+                {"name": "Polka Music"},
+                {"name": "Clown Noses"},
+                {"name": "Hawaiian Shirts"},
+                {"name": "Slippers"},
+                {"name": "Streamers"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nebraska",
+      "color": "#E61938",
+      "secondColor": "#8B0305",
+      "icon": "../../img/nebraska.png",
+      "gdate": "11-18-2017",
+      "gtime": "TBD",
+      "gameInfo": [
+        {
+          "food": [
+            {
+              "name": "Yarn Barn",
+              "dish": "Cow Pig",
+              "type": "Sides"
+            },
+            {
+              "name": "Craig Letterman",
+              "dish": "Chicken Pockets",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Bolt Litening",
+              "dish": "Carrot Cake",
+              "type": "Desserts"
+            },
+            {
+              "name": "Jim Curtain",
+              "dish": "Chips and Salsa",
+              "type": "Snacks"
+            },
+            {
+              "name": "Ustice Manwell",
+              "dish": "Pizza Pie",
+              "type": "Sides"
+            },
+            {
+              "name": "Carlos Riviera",
+              "dish": "Oreos",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Marco Sweedo",
+              "dish": "SHLEM!",
+              "type": "Desserts"
+            },
+            {
+              "name": "Winston Churchill",
+              "dish": "Bear Steak",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "Willy Yomama",
+              "dish": "Napkins and Cups",
+              "type": "ENFI/Other"
+            },
+            {
+              "name": "Cafeteria Face",
+              "dish": "Pulled Pork",
+              "type": "Main Dishes"
+            },
+            {
+              "name": "June Shoemaker",
+              "dish": "Pretzels",
+              "type": "Snacks"
+            },
+            {
+              "name": "Josh Nottarobot",
+              "dish": "Cable Wires",
+              "type": "Desserts"
+            },
+            {
+              "name": "Kerry Keylinger",
+              "dish": "Heating Trays",
+              "type": "ENFI/Other"
+            },
+            {
+              "name": "Jesse Chip",
+              "dish": "Roast Pie",
+              "type": "Sides"
+            },
+            {
+              "name": "Fredrik Onsfelder",
+              "dish": "Tater Tots",
+              "type": "Sides"
+            }
+          ]
+        },
+        {
+          "tickets": {
+            "attending":[
+              {
+                "name": "Nick Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Brian Soltis",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Adam Jackson",
+                "phone": "7249537041"
+              },
+              {
+                "name": "Connor Marshall",
+                "phone": "5855191578"
+              },
+              {
+                "name": "Chris Kovalchuk",
+                "phone": "7249845192"
+              },
+              {
+                "name": "Bill Madden",
+                "phone": "7172508432"
+              },
+              {
+                "name": "Ty Quinn",
+                "phone": "2487953532"
+              },
+              {
+                "name": "Josh Looney",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Anthony Zenobi",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Mckenzie Marshall",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dylan Pharell",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Dana Williams",
+                "phone": "7249635447"
+              },
+              {
+                "name": "Beth Carey",
+                "phone": "7249635447"
+              }
+            ],
+            "available":[
+              {
+                "name": "Ang Travato",
+                "phone": "7249635447"
+              }
+            ]
+          }
+        },
+        {
+          "theme": [
+            {
+              "name": "Tiny Hats",
+              "desc": "Everyone must wear a tiny hat of some sort.",
+              "supplies":[
+                {"name": "Polka Music"},
+                {"name": "Clown Noses"},
+                {"name": "Hawaiian Shirts"},
+                {"name": "Slippers"},
+                {"name": "Streamers"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

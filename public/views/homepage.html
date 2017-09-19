@@ -1,0 +1,12 @@
+<h1>HomePage</h1>
+<div style="display: -webkit-flex; display: flex; -webkit-justify-content: space-between; justify-content: space-between;">
+  <div ng-repeat="x in weather" style="border: 1px solid #ccc; position: relative; display: inline-block; font-size: 12px; padding: 10px;">
+    <span style="position: absolute; background: #ddd; left: 0px; top: 0px; padding: 2px 5px;">{{ $index+1 }}</span>
+    <p style="border-bottom: 1px solid black; margin-top: 15px;">{{ x.day }}</p>
+    <p style="border-bottom: 1px solid #ddd;">{{ x.date }}</p>
+    <p style="border-bottom: 1px solid #ddd;">{{ x.high }}</p>
+    <p style="border-bottom: 1px solid #ddd;">{{ x.low }}</p>
+    <p style="border-bottom: 1px solid #ddd;">{{ x.text }}</p>
+    <img ng-src="{{ x.img }}" class="wi" />
+  </div>
+</div>
