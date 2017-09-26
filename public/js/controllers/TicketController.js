@@ -1,4 +1,15 @@
-app.controller('TicketController', ['$scope', '$stateParams', 'teamsService', '$rootScope', '$timeout', function($scope, $stateParams, teamsService, $rootScope, $timeout) {
+app.controller('TicketController', ['$scope', '$stateParams', 'teamsService', '$rootScope', '$timeout', '$http', '$state', function($scope, $stateParams, teamsService, $rootScope, $timeout, $http, $state) {
+  
+  $http.get('http://localhost:8080/api/teams').then(function(res) {
+      var data = res.data;
+      $scope.tix = data[$stateParams.id];
+      $scope.tickets = $scope.tix.tickets;
+      setUpTickets();
+    }, function(res){
+      console.log('There was an error');
+    });
+
+  /*
   teamsService.then(function(data) {
     $scope.tix = data[$stateParams.id];
   	$scope.tickets = $scope.tix.tickets;
@@ -6,12 +17,11 @@ app.controller('TicketController', ['$scope', '$stateParams', 'teamsService', '$
   }, function(error) {
     console.log("Seems to be an error in the Tickets Controller");
   });
-
+*/
   function setUpTickets(){
-    var id = $scope.tix._id;
-    var section = 1;
-    var sub_section = "";
-    var rnum = 0;
+    var item_ID = $scope.tix._id;
+    var urlAv = "/api/tickets/available/update/"+item_ID;
+    var urlAtt = "/api/tickets/attending/update/"+item_ID;
 
     $scope.attending = $scope.tickets[0].attending;
     $scope.available = $scope.tickets[0].available;
@@ -60,25 +70,33 @@ app.controller('TicketController', ['$scope', '$stateParams', 'teamsService', '$
           addAvailable(attName, attPhone);
         }
 
-        console.log("localhost:8080/update/"+id+"/"+section+"/"+sub_section+"/"+rnum);
       }
 
       function removeAttending(){
-        $scope.attending.splice($scope.attending.indexOf(vgo),1);
-        isDone = true;
-        $scope.govisible = false;
-        vgo = "";
-        vgoin = "";
-
-        return isDone;
+        $http.delete('/api/tickets/attending/delete/'+item_ID+'/'+vgo._id)
+          .then(function(res){
+            console.log("Item Removed!");
+            isDone = true;
+            $scope.govisible = false;
+            vgo = "";
+            vgoin = "";
+          }, function (error){
+            console.log("~~ERROR~~"+error);
+          });
       }
 
       function addAvailable(attName, attPhone){
         $scope.newAvailable = new Object();
         $scope.newAvailable.name = attName;
         $scope.newAvailable.phone = attPhone;
-        $scope.available.push($scope.newAvailable);
-        $scope.newAvailable = new Object();
+        var dataAv = $scope.newAvailable;
+
+        $http.put(urlAv, dataAv).then(function(res) {
+          $scope.newAvailable = new Object();
+          $state.reload();
+        }, function(error) {
+          console.log(error);
+        });
       }
 
       // I CAN GO TO THE GAME (TICKET CLAIM)
@@ -96,27 +114,33 @@ app.controller('TicketController', ['$scope', '$stateParams', 'teamsService', '$
         if(isDone){
           addAttending(avName, avPhone);
         }
-
-        console.log("localhost:8080/update/"+id+"/"+section+"/"+sub_section+"/"+rnum);
       }
 
       function removeAvailable(){
-        $scope.available.splice($scope.available.indexOf(vnogo),1);
-        isDone = true;
-        $scope.nogovisible = false;
-        vgo = "";
-        vgoin = "";
-
-        return isDone;
+        $http.delete('/api/tickets/available/delete/'+item_ID+'/'+vnogo._id)
+          .then(function(res){
+            console.log("Item Removed!");
+            isDone = true;
+            $scope.nogovisible = false;
+            vgo = "";
+            vgoin = "";
+          }, function (error){
+            console.log("~~ERROR~~"+error);
+          });
       }
 
       function addAttending(avName, avPhone){
         $scope.newAttending = new Object();
         $scope.newAttending.name = avName;
         $scope.newAttending.phone = avPhone;
-        $scope.attending.push($scope.newAttending);
-        $scope.newAttending = new Object();
-        $scope.newAtt = new Object();
+        var dataAtt = $scope.newAttending;
+
+        $http.put(urlAtt, dataAtt).then(function(res) {
+          $scope.newAttending = new Object();
+          $state.reload();
+        }, function(error) {
+          console.log(error);
+        });
       }
     }, 200);
   }

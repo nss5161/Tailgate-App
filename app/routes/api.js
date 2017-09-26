@@ -32,14 +32,107 @@ module.exports = function(router) {
                             console.log(err);
                             res.status(500).send();
                         }else{
-                            res.send(updatedObject);
+                            res.send("Food Item Created!");
+                            console.log("Food Item Created!");
                         }
                     });
                 }
             }
         });
     });
-    /*
+
+    router.delete('/food/delete/:pid/:cid',function(req,res){
+        var pid = req.params.pid;
+        var cid = req.params.cid;
+
+        Teams.findOne({_id: pid}, function(err, foundObject){
+            if(err){
+                console.log(err);
+                res.status(500).send(err);
+            }else{
+                foundObject.food.id(cid).remove();
+                foundObject.save(function(err, updatedObject) {
+                    if(err){
+                        console.log(err);
+                        res.status(500).send();
+                    }else{
+                        res.send("Food Item Deleted!");
+                        console.log("Food Item Deleted!");
+                    }
+                });
+            }          
+        });
+    });
+
+    router.delete('/theme/delete/:pid/:cid',function(req,res){
+        var pid = req.params.pid;
+        var cid = req.params.cid;
+
+        Teams.findOne({_id: pid}, function(err, foundObject){
+            if(err){
+                console.log(err);
+                res.status(500).send(err);
+            }else{
+                foundObject.theme[0].supplies.id(cid).remove();
+                foundObject.save(function(err, updatedObject) {
+                    if(err){
+                        console.log(err);
+                        res.status(500).send();
+                    }else{
+                        res.send("Theme Supply Item Deleted!");
+                        console.log("Theme Supply Item Deleted!");
+                    }
+                });
+            }          
+        });
+    });
+
+    router.delete('/tickets/attending/delete/:pid/:cid',function(req,res){
+        var pid = req.params.pid;
+        var cid = req.params.cid;
+
+        Teams.findOne({_id: pid}, function(err, foundObject){
+            if(err){
+                console.log(err);
+                res.status(500).send(err);
+            }else{
+                foundObject.tickets[0].attending.id(cid).remove();
+                foundObject.save(function(err, updatedObject) {
+                    if(err){
+                        console.log(err);
+                        res.status(500).send();
+                    }else{
+                        res.send("Theme Supply Item Deleted!");
+                        console.log("Theme Supply Item Deleted!");
+                    }
+                });
+            }          
+        });
+    });
+
+    router.delete('/tickets/available/delete/:pid/:cid',function(req,res){
+        var pid = req.params.pid;
+        var cid = req.params.cid;
+
+        Teams.findOne({_id: pid}, function(err, foundObject){
+            if(err){
+                console.log(err);
+                res.status(500).send(err);
+            }else{
+                foundObject.tickets[0].available.id(cid).remove();
+                foundObject.save(function(err, updatedObject) {
+                    if(err){
+                        console.log(err);
+                        res.status(500).send();
+                    }else{
+                        res.send("Theme Supply Item Deleted!");
+                        console.log("Theme Supply Item Deleted!");
+                    }
+                });
+            }          
+        });
+    });
+    
     router.put('/tickets/update/:id', function(req, res){
         var id = req.params.id;
         Teams.findOne({_id: id}, function(err, foundObject){
@@ -68,7 +161,7 @@ module.exports = function(router) {
             }
         });
     });
-    */
+
     router.put('/tickets/available/update/:id', function(req, res){
         var id = req.params.id;
         Teams.findOne({_id: id}, function(err, foundObject){
@@ -126,7 +219,7 @@ module.exports = function(router) {
             }
         });
     });
-    /*
+    
     router.put('/theme/update/:id', function(req, res){
         var id = req.params.id;
         Teams.findOne({_id: id}, function(err, foundObject){
@@ -157,7 +250,7 @@ module.exports = function(router) {
             }
         });
     });
-    */
+    
     router.put('/theme/supplies/update/:id', function(req, res){
         var id = req.params.id;
         Teams.findOne({_id: id}, function(err, foundObject){
@@ -186,7 +279,7 @@ module.exports = function(router) {
             }
         });
     });
-    /*
+    
     router.post('/teams', function(req, res){
         var team = new Teams();
         team.name = req.body.name;
@@ -204,7 +297,7 @@ module.exports = function(router) {
             }
         });
     });
-    */
+    
     router.get('/teams', function(req, res){
         Teams.find(function(err, foundObject) {
             if(err){

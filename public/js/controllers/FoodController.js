@@ -3,7 +3,6 @@ app.controller('FoodController', ['$scope', '$stateParams', 'teamsService', '$ro
   	$scope.gameInfo = data[$stateParams.id];
   	$scope.food = $scope.food;
   	setUpFood();
-    
   }, function(error) {
     console.log("Seems to be an error in the gameNav.js files");
   });
