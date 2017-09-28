@@ -1,0 +1,30 @@
+{
+  "name": "tailgate-app",
+  "version": "1.0.0",
+  "description": "This app will help better organize our tailgates",
+  "main": "server.js",
+  "dependencies": {
+    "angular-ui-router": "^1.0.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.10.8",
+    "morgan": "^1.8.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Tailgate",
+    "Food",
+    "People",
+    "Football",
+    "PSU",
+    "Penn",
+    "State"
+  ],
+  "author": "Nicholas Soltis",
+  "license": "ISC"
+}

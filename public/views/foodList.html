@@ -1,0 +1,21 @@
+<div class="col-sm-12">
+  <span ng-show="people.length == 0">Noone has stepped up.</span>
+  <table class="table table-bordered table-striped">
+  <tbody>
+  	<th style="font-size: 18px; background: {{ gameInfo.color }}; border-color: {{ gameInfo.color }}; border-bottom: 3px solid {{ gameInfo.secondColor }}; color: white; font-weight: 400;" colspan="3">{{ foodCat }}</th>
+    <tr ng-repeat="key in foodStuff | filter:{type: foodCat}">
+      <td style="width: 50%;" class="person-cell" nowrap>{{ key.name }}</td>
+      <td style="width: 50%;" class="person-cell" nowrap>{{ key.dish }}</td>
+      <td><a class="close-btn" ng-click="deleteFoodItem(key)"><i style="left: 2px; top: 2px; color: red;" class="fa fa-times-circle-o" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr class="spacer-row">
+      <td colspan="3"></td>
+    </tr>
+    <tr class="input-row">
+      <td><input class="form-control person-name" ng-model="newItem.name" placeholder="Enter Name" style="color: {{ gameInfo.secondColor }};" /></td>
+      <td><input class="form-control person-food" ng-model="newItem.dish" placeholder="Enter Food" style="color: {{ gameInfo.secondColor }};" /></td>
+      <td><button ng-click="addFoodItem()" style="background: {{ gameInfo.color }};" class="btn person-btn"><i style="font-size: 13px !important; color: white;" class="fa fa-plus" aria-hidden="true"></i></button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

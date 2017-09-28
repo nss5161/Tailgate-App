@@ -1,0 +1,40 @@
+<style>
+	.theme-title::after{
+		background-color: {{detail.color}};
+		width: {{titleWidth}};
+	}
+	.theme-description{
+		border: 1px solid #eee;
+	}
+</style>
+<div class="row theme-row" style="margin-top: 25px;">
+	<div class="container">
+		<div class="col-sm-6 theme-desc">
+			<h3 class="theme-title" style="background-color: {{detail.color}}; background: transparent;">{{theme.name}}</h3>
+			<p class="theme-description">{{theme.desc}}</p>
+		</div>
+		<div class="col-sm-6">
+		  	<div class="col-sm-12">
+			  <table class="table table-bordered table-striped">
+			  <tbody>
+			  	<th style="font-size: 18px; background: {{ detail.color }}; border-color: {{ detail.color }}; border-bottom: 3px solid {{ detail.secondColor }}; color: white; font-weight: 400;" colspan="3">Theme Supplies</th>
+			  	<tr ng-show="supplies.length == 0">
+			  		<td style="background: #f7e1e1; color: #ce5a5a;" colspan="3">Noone is bringing anything.</td>
+			  	</tr>
+			    <tr ng-repeat="sup in supplies">
+			      <td style="width: 100%;" class="person-cell" nowrap>{{ sup.name }}</td>
+			      <td><a class="close-btn" ng-click="dumpItem(sup)"><i style="color: red;" class="fa fa-times-circle-o" aria-hidden="true"></i></a></td>
+			    </tr>
+			    <tr class="spacer-row">
+			      <td colspan="3"></td>
+			    </tr>
+			    <tr class="input-row">
+			      <td><input class="form-control person-name" ng-model="suppItem.name" placeholder="Enter Supplies" style="color: {{ gameInfo.secondColor }};" /></td>
+			      <td><button ng-click="addSupplies()" style="background: {{ gameInfo.color }};" class="btn person-btn"><i style="font-size: 13px !important; color: white;" class="fa fa-plus" aria-hidden="true"></i></button></td>
+			    </tr>
+			    </tbody>
+			  </table>
+			</div>
+		</div>
+	</div>
+</div>

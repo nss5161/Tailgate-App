@@ -1,0 +1,11 @@
+<body ng-app="myApp" ng-controller="sampleController">
+  <div class="row bracket-row">
+    <div class="container">
+      <div class="col-xl-12 bracket-container">
+        <div class="section" style="width: {{i_width}}%;" id="sect{{$index}}" ng-repeat="x in contents"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<div ui-sref="olympics-home" style="width: 50px; height: 50px; background: #ddd; position: absolute; cursor: pointer; bottom: 0px;">Back</div>

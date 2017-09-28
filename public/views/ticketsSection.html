@@ -1,0 +1,66 @@
+<div class="row" style="margin-top: 25px;">
+	<div class="container">
+		<div class="col-sm-6">
+		  <div class="col-sm-12">
+			  <table class="table table-bordered table-striped">
+			  <tbody>
+			  	<th style="font-size: 18px; background: {{ detail.color }}; border-color: {{ detail.color }}; border-bottom: 3px solid {{ detail.secondColor }}; color: white; font-weight: 400;" colspan="3">Attending</th>
+			  	<tr ng-show="attending.length == 0">
+			  		<td style="background: #f7e1e1; color: #ce5a5a;" colspan="3">There is noone going to this game.</td>
+			  	</tr>
+			    <tr ng-repeat="go in attending">
+			      <td style="width: 50%;" class="person-cell" nowrap>{{ go.name }}</td>
+			      <td style="width: 50%;" class="person-cell" nowrap>{{ go.phone }}</td>
+			      <td><a class="close-btn" ng-click="notGoingModal(go, $index)"><i style="color: red;" class="fa fa-times-circle-o" aria-hidden="true"></i></a></td>
+			    </tr>
+			    </tbody>
+			  </table>
+			</div>
+		</div>
+		<div class="col-sm-6">
+		  	<div class="col-sm-12">
+			  <table class="table table-bordered table-striped">
+			  <tbody>
+			  	<th style="font-size: 18px; background: {{ detail.color }}; border-color: {{ detail.color }}; border-bottom: 3px solid {{ detail.secondColor }}; color: white; font-weight: 400;" colspan="3">Available</th>
+			  	<tr ng-show="available.length == 0">
+			  		<td style="background: #f7e1e1; color: #ce5a5a;" colspan="3">There are no available tickets.</td>
+			  	</tr>
+			    <tr ng-repeat="nogo in available">
+			      <td style="width: 50%;" class="person-cell" nowrap>{{ nogo.name }}</td>
+			      <td style="width: 50%;" class="person-cell" nowrap>{{ nogo.phone }}</td>
+			      <td><a class="close-btn" ng-click="iCanGoModal(nogo, $index)"><i style="color: green;" class="fa fa-check-circle-o" aria-hidden="true"></i></a></td>
+			    </tr>
+			    </tbody>
+			  </table>
+			</div>
+		</div>
+	</div>
+	<div class="go-modal-background" ng-show="govisible">
+		<div class="go-modal">
+			<h3>Are you sure you don't want to go?</h3>
+			<p>Your ticket will be made available to the public</p>
+			<hr/>
+			<button class="pull-left" ng-click="closeModal()">No</button>
+			<button class="pull-right" ng-click="notGoing()">Yes</button>
+		</div>
+	</div>
+	<div class="go-modal-background" ng-show="nogovisible">
+		<div class="go-modal">
+			<h3>Are you sure you want to go?</h3>
+			<p>You will be added to the list of people attending</p>
+			<hr/>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Name</span>
+				<input class="form-control" ng-model="newAtt.name" placeholder="Enter Name" />
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Phone</span>
+				<input class="form-control" ng-model="newAtt.phone" placeholder="Enter Phone" />
+			</div>
+			<hr/>
+			<button class="pull-left" ng-click="closeModal()">No</button>
+			<button class="pull-right" ng-click="iCanGo()">Yes</button>
+		</div>
+	</div>
+</div>
